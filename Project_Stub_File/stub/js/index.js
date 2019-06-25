@@ -1,0 +1,1 @@
+"sir i used bootstrap for modals in case if you are using a browser other than chrome please turn on the internet";
