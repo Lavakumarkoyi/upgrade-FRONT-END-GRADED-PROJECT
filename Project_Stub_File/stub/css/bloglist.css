@@ -1,0 +1,162 @@
+.post {
+  position: relative;
+  width: 90%;
+  height: 20%;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
+    0 4px 20px 0 rgba(79, 19, 97, 0.19);
+  margin: 10px 10px 10px 20px;
+  float: left;
+  border-radius: 15px;
+}
+
+.post-left {
+  width: 15%;
+  max-width: 15%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+.post-content {
+  width: 75%;
+  display: table-cell;
+  text-align: left;
+  background-color: #e8e8e8;
+  color: #000000;
+  border-radius: 0 15px 15px 0;
+  padding: 0 20px;
+}
+.post-title {
+  font-family: "Itim", cursive;
+  font-weight: bold;
+  color: #2b312b;
+  font-size: 25px;
+  height: 25px;
+  text-overflow: hidden;
+}
+.post-more {
+  float: right;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.post-desc {
+  height: 100px;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 !important;
+  color: #fff;
+  background-color: orange;
+  background-size: 2000% 2000%;
+}
+.allPostsContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.trash {
+  float: right;
+  padding-top: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btn-dot {
+  float: right;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .post {
+    width: 45%;
+    margin: 10px 10px 10px 20px;
+    text-overflow: hidden;
+  }
+
+  .five {
+    width: 45%;
+    float: none;
+    clear: both;
+    margin: 10px 10px 10px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .post-title {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .post {
+    margin: 10px 10px 10px 20px;
+    width: auto;
+    float: none;
+    text-overflow: hidden;
+  }
+
+  .post-title {
+    padding-bottom: 0;
+  }
+}
+
+.btn-signin {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 5px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.buttons {
+  float: right;
+}
+
+#main-container-div {
+  height: 100px;
+}
+
+.logo {
+  float: left;
+}

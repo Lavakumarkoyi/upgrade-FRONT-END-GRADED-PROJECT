@@ -1,0 +1,71 @@
+body {
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 !important;
+  background-size: 100% cover !important;
+  overflow: hidden;
+  display: block;
+}
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+.logo {
+  float: left;
+}
+
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.buttons {
+  float: right;
+}
+
+.postButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-container-div {
+  height: 100vh;
+  position: relative;
+}
+
+.btn-signin {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 5px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-post {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 5px;
+  background-color: yellow;
+  color: #000;
+  cursor: pointer;
+}

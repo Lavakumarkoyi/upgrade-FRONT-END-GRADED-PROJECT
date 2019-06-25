@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="..\css\bloglist.css" rel="stylesheet" type="text/css" />
+    <link href="..\css\header.css" rel="stylesheet" type="text/css" />
+    <link href="..\css\font.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="..\font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+  <body class="bg-success">
+    <div id="main-container-div">
+      <div class="header clearfix">
+        <!-- Insert code for Sign Up, Sign In button here. 
+                 Add code for "ScriBBler" heading and the sub-heading -->
+        <div class="logo">
+          <img src="lava.jpg" /><!--sir I didn't found the logo-->
+          <img src="lava.jpg" />
+        </div>
+        <div class="buttons">
+          <button
+            type="button"
+            class="btn-signin"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            signup
+          </button>
+          <button
+            type="button"
+            class="btn-signin"
+            data-toggle="modal"
+            data-target="#signin"
+          >
+            signin
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <!-- Insert code for Sign In modal here -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>SIGNUP FORM</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="fullname">FULLNAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="FULLNAME"
+                  id="fullname"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="USERNAME"
+                  id="username"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="password"
+                  id="password"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cpassword">CONFIRM PASSWORD</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="CONFIRM PASSWORD"
+                  id="cpassword"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="signin">
+      <!-- Insert code for Sign Up modal here -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>SIGNIN FORM</h5>
+            <button class="close" data-dismiss="modal">&times</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="USERNAME"
+                  id="username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="PASSWORD"
+                  id="password"
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                  SIGNIN
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="allPostsContainer">
+      <div class="post">
+        <div class="post-left">
+          <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+          <button type="button" class="trash">
+            <i
+              class="fa fa-trash"
+              data-target="#mytrash"
+              data-toggle="modal"
+            ></i>
+          </button>
+          <!-- Insert code for Trash icon here -->
+
+          <p class="post-title">Hello there ! This is Post 1.</p>
+          <p class="post-desc">
+            Jimi Hendrix was arguably the greatest instrumentalist in the
+            history of rock music.[1] Hendrix expanded the range and vocabulary
+            of the electric guitar into areas no musician had ever ventured
+            before. His boundless drive, technical ability and creative
+            application of such effects as distortion forever transformed the
+            sound of rock and roll.
+          </p>
+
+          <!-- Insert code for ... icon here -->
+
+          <div class="dot-icon">
+            <a href="post.html"
+              ><button type="button" class="btn-dot">
+                <i class="fa fa-ellipsis-h"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-left">
+          <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+          <button type="button" class="trash">
+            <i
+              class="fa fa-trash"
+              data-target="#mytrash"
+              data-toggle="modal"
+            ></i>
+          </button>
+          <!-- Insert code for Trash icon here -->
+
+          <p class="post-title">Hello there ! This is Post 2.</p>
+          <p class="post-desc">
+            Jimi Hendrix was arguably the greatest instrumentalist in the
+            history of rock music.[1] Hendrix expanded the range and vocabulary
+            of the electric guitar into areas no musician had ever ventured
+            before. His boundless drive, technical ability and creative
+            application of such effects as distortion forever transformed the
+            sound of rock and roll.
+          </p>
+
+          <!-- Insert code for ... icon here -->
+
+          <div class="dot-icon">
+            <a href="post.html"
+              ><button type="button" class="btn-dot">
+                <i class="fa fa-ellipsis-h"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-left">
+          <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+          <button type="button" class="trash">
+            <i
+              class="fa fa-trash"
+              data-target="#mytrash"
+              data-toggle="modal"
+            ></i>
+          </button>
+          <!-- Insert code for Trash icon here -->
+
+          <p class="post-title">Hello there ! This is Post 3.</p>
+          <p class="post-desc">
+            Jimi Hendrix was arguably the greatest instrumentalist in the
+            history of rock music.[1] Hendrix expanded the range and vocabulary
+            of the electric guitar into areas no musician had ever ventured
+            before. His boundless drive, technical ability and creative
+            application of such effects as distortion forever transformed the
+            sound of rock and roll.
+          </p>
+
+          <!-- Insert code for ... icon here -->
+
+          <div class="dot-icon">
+            <a href="post.html"
+              ><button type="button" class="btn-dot">
+                <i class="fa fa-ellipsis-h"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-left">
+          <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+          <!-- Insert code for Trash icon here -->
+
+          <button type="button" class="trash">
+            <i
+              class="fa fa-trash"
+              data-target="#mytrash"
+              data-toggle="modal"
+            ></i>
+          </button>
+
+          <p class="post-title">Hello there ! This is Post 4.</p>
+          <p class="post-desc">
+            Jimi Hendrix was arguably the greatest instrumentalist in the
+            history of rock music.[1] Hendrix expanded the range and vocabulary
+            of the electric guitar into areas no musician had ever ventured
+            before. His boundless drive, technical ability and creative
+            application of such effects as distortion forever transformed the
+            sound of rock and roll.
+          </p>
+
+          <!-- Insert code for ... icon here -->
+
+          <div class="dot-icon">
+            <a href="post.html"
+              ><button type="button" class="btn-dot">
+                <i class="fa fa-ellipsis-h"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="post five">
+        <div class="post-left">
+          <p class="post-username">Jimi</p>
+        </div>
+        <div class="post-content">
+          <!-- Insert code for Trash icon here -->
+
+          <p class="post-title">Hello there ! This is Post 5.</p>
+          <p class="post-desc">
+            Jimi Hendrix was arguably the greatest instrumentalist in the
+            history of rock music.[1] Hendrix expanded the range and vocabulary
+            of the electric guitar into areas no musician had ever ventured
+            before. His boundless drive, technical ability and creative
+            application of such effects as distortion forever transformed the
+            sound of rock and roll.
+          </p>
+
+          <!-- Insert code for ... icon here -->
+
+          <div class="dot-icon">
+            <a href="post.html"
+              ><button type="button" class="btn-dot">
+                <i class="fa fa-ellipsis-h"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="mytrash">
+      <!-- Insert code for delete modal here -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h5>ARE YOU SURE TO DELETE IT</h5>
+            <button class="btn btn-danger">YES</button>
+            <button class="btn btn-danger">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="postModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="fullname">FULLNAME</label>
+                <input type="text" class="form-control" id="fullname" />
+              </div>
+              <div class="form-group">
+                <lable for="title">TITLE OF BLOG</lable>
+                <input type="text" class="form-control" id="title" />
+              </div>
+              <div class="form-group">
+                <label for="textarea"></label>
+                <textarea id="textarea" class="for-control"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="..\js\bloglist.js"></script>
+    <script src="..\js\header.js"></script>
+  </body>
+</html>
